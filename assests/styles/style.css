@@ -1,0 +1,39 @@
+*{
+    border: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    --black: #1b201a;
+    --white: #ffffff;
+    --gray: #797c78;
+}
+nav {
+    width:100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    list-style: none;
+}
+.nav-links li{
+    margin: 0 2em;
+}
+.f-logo{
+    margin-left: 10%;
+}
+.f-logo, .nav-links a{
+    text-decoration: none;
+}
+.hero-container h1, .hero-container h2{
+    margin-left: 16%;
+}
+.cta{
+   display: block;
+    text-align: center;
+}
