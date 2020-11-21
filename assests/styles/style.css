@@ -1,12 +1,22 @@
 *{
     border: 0;
+    margin:0;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none;
+    
+    font-family: 'Roboto', sans-serif;
 }
+
+h1, h1 span,.f-logo, .cta, .drawing-year, .drawing-year span{font-family: 'Domine', serif}
+
 html{
-    --black: #1b201a;
-    --white: #ffffff;
-    --gray: #797c78;
+    --black: #2E3027;
+    --white: #FFE8D6;
+    --gray: #CB997E;
+    --accent: #A5A58D;
+    scroll-behavior: smooth;
+
 }
 nav {
     width:100%;
@@ -27,13 +37,85 @@ nav {
 .f-logo{
     margin-left: 10%;
 }
-.f-logo, .nav-links a{
-    text-decoration: none;
+
+.hero-container h1 span {
+    background-image: url(/assests/images/design_element.png)  ;
+   background-repeat: no-repeat;
+   background-position: center;
+   
 }
+
 .hero-container h1, .hero-container h2{
     margin-left: 16%;
+    color: var(--black);
+    margin-top: 1em;
+}
+.hero-container h1{
+    font-size: 8em;
+}
+.hero-container h2{
+    font-weight: 400;
+    font-size: 2em;
+    width: 40%;
 }
 .cta{
-   display: block;
+    font-weight: 800;
+    color: var(--black);
+    display: block;
     text-align: center;
+    margin: 25vh auto 10vh auto;
+    font-size: 1.5em;
+    border-bottom: 0.2em solid var(--gray);
+    width: fit-content;
+}
+
+
+
+.timeline{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 3em 0;
+}
+.drawing:not(:first-child){margin-top: 0;}
+.drawing {
+  
+    border-top: 1em solid var(--white);
+    margin-left:16%;
+    position: relative;
+  }
+  
+.drawing-year {
+    width:min-content;
+    font-size: 7vw;
+    font-weight: 600;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    text-align: left;
+    height: calc(0vw + 20px);
+    transition: all 0.2s ease-in;
+}
+.drawing-year span{
+    font-size: 2.5vw;
+}
+
+.picture-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom:5em;
+}
+.picture-container img{
+    margin-right: 5%;
+    width: 60%;
+}
+.picture-container p{
+    z-index: 2;
+    width: 30%;
+}
+
+
+footer{
+    background-color: var(--accent);
+    height: 10vh;
 }
