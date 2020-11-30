@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h1 span,.f-logo, .cta, .drawing-year, .drawing-year span{font-family: 'Domine', serif}
+h1, h1 span, .f-logo, .cta, .drawing-year, .drawing-year span{font-family: 'Domine', serif}
 
 html{
     --black: #2E3027;
@@ -24,31 +24,35 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .nav-links {
     display: flex;
     justify-content: space-around;
     margin-right: 10%;
     list-style: none;
+    color: var(--black)
 }
 .nav-links li{
     margin: 0 2em;
 }
+.nav-links a, .f-logo{
+    color: var(--black);
+    font-size: 1.2em;
+}
 .f-logo{
     margin-left: 10%;
+    font-size: 2em;
+    font-weight:700 ;
 }
 
-.hero-container h1 span {
-    background-image: url(/assests/images/design_element.png)  ;
-   background-repeat: no-repeat;
-   background-position: center;
-   
-}
+
+
 
 .hero-container h1, .hero-container h2{
     margin-left: 16%;
     color: var(--black);
-    margin-top: 1em;
+    margin-top: 0.7em;
 }
 .hero-container h1{
     font-size: 8em;
@@ -58,32 +62,32 @@ nav {
     font-size: 2em;
     width: 40%;
 }
-.cta{
-    font-weight: 800;
-    color: var(--black);
-    display: block;
-    text-align: center;
-    margin: 25vh auto 10vh auto;
-    font-size: 1.5em;
-    border-bottom: 0.2em solid var(--gray);
-    width: fit-content;
+.cta{display:flex;justify-content: flex-end;}
+.cta img{
+    position: relative;
+    height: 20em;
+    top: 1.1em;
+    margin-right: 10%;
+    margin-top: 4em;
 }
-
 
 
 .timeline{
     background-color: var(--black);
     color: var(--white);
-    padding: 3em 0;
+    padding: 10em 0;
 }
-.drawing:not(:first-child){margin-top: 0;}
+
 .drawing {
   
     border-top: 1em solid var(--white);
     margin-left:16%;
     position: relative;
   }
-  
+.drawing a{
+    color: var(--gray);
+    border-bottom: 1px solid;
+}
 .drawing-year {
     width:min-content;
     font-size: 7vw;
@@ -107,15 +111,42 @@ nav {
 }
 .picture-container img{
     margin-right: 5%;
-    width: 60%;
+    width: 55%;
 }
 .picture-container p{
     z-index: 2;
     width: 30%;
 }
 
-
+.micro-button a{
+    content: "ss";
+    position: absolute;
+    width: 16%;
+    height: 1em;
+    background-color: var(--white);
+}
 footer{
     background-color: var(--accent);
     height: 10vh;
+}
+@media all and (max-width: 1000px){
+    html{
+        background-color: red;
+    }
+    .timeline, .hero-container h1, .hero-container h2{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .hero-container h1{font-size:3.5em ;}
+    .hero-container h2{font-size:1.4em ;
+    width: 90%;}
+    
+    .picture-container{
+    flex-direction: column-reverse;
+    }
+    .picture-container p {
+        align-self: baseline;
+        margin-left: 40%;
+    }
 }
