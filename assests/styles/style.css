@@ -38,7 +38,7 @@ nav {
     border-bottom: 1px solid;
 }
 a:hover{
-    background-image: url("assests/images/t5arbicha.svg");
+    background-image: url("../images/t5arbicha.svg");
     background-size: cover;
 }
 .nav-links li a:after{
