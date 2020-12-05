@@ -12,9 +12,10 @@ function myFunction(x) {
  myFunction(x) // Call listener function at run time
  x.addListener(myFunction) // Attach listener function on state changes
 
- var j = 0;
-//  window.addEventListener('scroll', ()=>{
-     
+
+
+
+ window.addEventListener('scroll', ()=>{
      
 //      try{
 //      var p = getBottomP(j)
@@ -39,5 +40,4 @@ function myFunction(x) {
         
      
 //      console.log("j: "+ j +" p: "+ parseInt(p))
-    
-//  })
+})
