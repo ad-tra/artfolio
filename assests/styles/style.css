@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h1 span, .f-logo, .cta, .drawing-year, .drawing-year span{font-family: 'Domine', serif}
+h1, h1 span, .f-logo, .cta, .drawing-year, .drawing-year span, footer h3{font-family: 'Domine', serif}
 
 html{
     --black: #2E3027;
@@ -38,7 +38,7 @@ nav {
     border-bottom: 1px solid;
 }
 a:hover{
-    background-image: url("/assests/images/t5arbicha.svg");
+    background-image: url("assests/images/t5arbicha.svg");
     background-size: cover;
 }
 .nav-links li a:after{
@@ -86,7 +86,7 @@ a:hover{
 .timeline{
     background-color: var(--black);
     color: var(--white);
-    padding: 10em 0;
+    padding-top: 10em;
 }
 
 .drawing {
@@ -123,10 +123,11 @@ a:hover{
 .picture-container img{
     margin-right: 5%;
     width: 55%;
+    z-index: 2;
 }
 .picture-container p{
     font-size: 1.5em;
-    z-index: 2;
+  
     width: 30%;
 
 }
@@ -140,7 +141,12 @@ a:hover{
 }
 footer{
     background-color: var(--accent);
-    height: 10vh;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    color:var(--black);
 }
 @media all and (max-width: 1000px){
 
@@ -157,14 +163,15 @@ footer{
     .f-logo{font-size:1.2em}
     .picture-container{
     flex-direction: column-reverse;
+    align-items: center;
     }
     .drawing{
         margin-left:0;
         
     }
     .drawing-year{
-        
-        font-size: 15vw;
+    margin-left:5%;    
+    font-size: 15vw;
     margin-bottom:35vw;
     }
     .drawing-year span{
@@ -172,12 +179,12 @@ footer{
     }
 
     .picture-container img{
-        margin:0;
-        width:85vw
+        margin:0 auto;
+        width: 90%
     }
     .picture-container p {
         padding-top:1em;
-        font-size: 0.8em;
+        font-size: 0.9em;
         width: 85%;
         margin-bottom: 20vh;
       
