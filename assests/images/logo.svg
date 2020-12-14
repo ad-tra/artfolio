@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" fill = "#A5A58D" >
+  <g data-name="Layer 2">
+    <g data-name="Layer 1">
+      <path d="M288 96h72v264h-72z"/>
+      <path d="M192 0v168h72V72h96V0zM192 192v96H96v72h168V192z"/>
+      <path d="M144 0H0v360h72v-96h96V0zM72 192V72h24v120z"/>
+    </g>
+  </g>
+</svg>

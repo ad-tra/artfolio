@@ -46,17 +46,19 @@ a:hover{
     font-size: 0.8em;
    
 }
-.nav-links a, .f-logo{
+.nav-links a{
     color: var(--black);
-    font-size: 1.2em;
+    font-size: 1.3em;
     
 }
 .f-logo{
-    margin-left: 10%;
+    margin-left: 8%;
     font-size: 2em;
     font-weight:700 ;
 }
-
+.f-logo img{
+    width: 1em;
+}
 
 
 
@@ -160,7 +162,7 @@ footer{
     .cta img{width: 100%; max-width: 25em;height: auto; margin: 3em auto 0 auto;}
 
     nav{font-size:0.7em}
-    .f-logo{font-size:1.2em}
+    .f-logo{font-size:1.4em}
     .picture-container{
     flex-direction: column-reverse;
     align-items: center;
