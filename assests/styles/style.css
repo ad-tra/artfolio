@@ -35,7 +35,9 @@ nav {
 }
 .nav-links a{
     margin: 0 2vw;
-    border-bottom: 1px solid;
+    border-bottom: 1px var(--accent) solid;
+    color: var(--black);
+    font-size: 1.3em;
 }
 a:hover{
     background-image: url("../images/t5arbicha.svg");
@@ -47,8 +49,7 @@ a:hover{
    
 }
 .nav-links a{
-    color: var(--black);
-    font-size: 1.3em;
+ 
     
 }
 .f-logo{
