@@ -141,7 +141,7 @@ a:hover{
 }
 .thank-you{
     display: flex;
-    padding: 6em 5% 6em 5%;
+    padding: 6em 5% 6em;
     margin:  auto;
     width: fit-content;
     flex-direction: column;
