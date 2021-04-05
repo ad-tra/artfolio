@@ -11,8 +11,8 @@
 h1, h1 span, .f-logo, .cta, .drawing-year, .drawing-year span, footer h3{font-family: 'Domine', serif}
 
 html{
-    --black: #2E3027;
-    --white: #FFE8D6;
+    --black: #181f25;
+    --white: #e4cebd;
     --gray: #CB997E;
     --accent: #A5A58D;
     scroll-behavior: smooth;
